@@ -130,7 +130,7 @@ const MovieLayout = () => {
 				setSelectedFilters={setSelectedFilters}
 				allFilters={allFilters}
 			/>
-			<div className="col-span-7 w-full h-auto grid grid-cols-4 max-2xl:grid-cols-3 gap-5 max-xl:col-span-full">
+			<div className="col-span-7 w-full h-auto grid grid-cols-4 max-2xl:grid-cols-3 gap-5 max-xl:col-span-full max-md:grid-cols-2 max-[500px]:grid-cols-1">
 				{filteredData.map((movie) => (
 					<MovieCard key={movie.movietitle} movie={movie} />
 				))}
